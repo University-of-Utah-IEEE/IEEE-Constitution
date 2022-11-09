@@ -1,0 +1,99 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+ \usepackage{graphicx}
+ \usepackage{titling}
+
+ \title{
+ University of Utah IEEE Constitution
+}
+\author{Richard (Rich) Baird}
+\date{November 2022}
+ 
+ \usepackage{fancyhdr}
+\fancypagestyle{plain}{%  the preset of fancyhdr 
+    \fancyhf{} % clear all header and footer fields
+    \fancyfoot[R]{
+        \includegraphics[width=2cm]{ieee-logo.png}
+    }
+    \fancyfoot[L]{IEEE Constitution 2022}
+    \fancyhead[L]{IEEE Constitution}
+    \fancyhead[R]{2022}
+}
+\pagestyle{plain}% Set page style to plain.
+\makeatletter
+\def\@maketitle{%
+  \newpage
+  \null
+  \vskip 1em%
+  \begin{center}%
+  \let \footnote \thanks
+    {\LARGE \@title \par}%
+    \vskip 1em%
+    %{\large \@date}%
+  \end{center}%
+  \par
+  \vskip 1em}
+\makeatother
+
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+\usepackage{lipsum}  
+\usepackage{cmbright}
+
+\begin{document}
+
+\maketitle
+
+\noindent\begin{tabular}{@{}ll}
+    President & \theauthor\\
+     Officers &  TODO \\
+     Updated & 11/09/2022 \\
+     Ratified On &
+\end{tabular}
+
+\section*{Article \rom 1 -- Name and Purpose}
+\lipsum[1-2]
+
+\section*{Article \rom 2 -- Membership}
+\lipsum[3-3]
+
+\section*{Article \rom 3 -- Meetings}
+\lipsum[4-4]
+
+\section*{Article \rom 4 -- Executive Board}
+\lipsum[1-2]
+
+\section*{Article \rom 5 -- Elections}
+\lipsum[1-2]
+
+\section*{Article \rom 6 -- Funds}
+\lipsum[1]
+
+\section*{Article \rom 7 -- Committees}
+\lipsum[1]
+
+\section*{Article \rom 8 -- Affiliations}
+\lipsum[1]
+
+\section*{Article \rom 9 -- Advisor}
+\lipsum[1]
+
+\section*{Article \rom {10} -- Committees}
+\lipsum[1]
+
+\section*{Article \rom {11} -- Amendments}
+\lipsum[1]
+
+\section*{Article \rom {12} -- Bylaws}
+\lipsum[1]
+
+\end{document}
